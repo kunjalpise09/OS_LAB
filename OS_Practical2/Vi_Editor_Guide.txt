@@ -1,0 +1,47 @@
+# ===== vi Editor Guide =====
+
+# Open or create a file with vi
+vi <file_name>
+
+# ----- Modes in vi -----
+# Normal Mode (default when vi opens)
+# Insert Mode - Press one of the following in Normal Mode:
+#   i   - Insert before cursor
+#   I   - Insert at beginning of line
+#   a   - Append after cursor
+#   A   - Append at end of line
+#   o   - Open new line below
+#   O   - Open new line above
+
+# Press ESC to return to Normal Mode
+
+# ----- Save/Quit Commands (from Normal Mode) -----
+:w        # Save file
+:q        # Quit vi
+:wq       # Save and quit
+:x        # Save and quit
+:q!       # Quit without saving
+
+# ----- Editing -----
+x         # Delete character
+dd        # Delete current line
+yy        # Copy (yank) current line
+p         # Paste below
+u         # Undo
+Ctrl+r    # Redo
+
+# ----- Navigation (Normal Mode) -----
+h         # Left
+l         # Right
+j         # Down
+k         # Up
+0         # Start of line
+$         # End of line
+gg        # Go to start of file
+G         # Go to end of file
+:n        # Go to line number n (e.g., :10)
+
+# Exit vi by pressing ESC, then typing:
+#   :wq     - Save and exit
+#   :q      - Quit
+#   :q!     - Force quit without saving
