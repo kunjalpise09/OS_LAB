@@ -1,0 +1,39 @@
+# List files and directories
+ls
+
+# Long listing format
+ls -l
+
+# List including hidden files
+ls -a
+
+# Long listing including hidden files
+ls -la
+ls -al
+
+# Long listing with human-readable sizes
+ls -lh
+
+# Sort by modification time (newest first)
+ls -lt
+
+# Sort by modification time (oldest first)
+ls -ltr
+
+# Recursive list of directories
+ls -R
+
+# List only directories
+ls -d */
+
+# List all .txt files
+ls *.txt
+
+# List one file per line
+ls -1
+
+# Sort by file size
+ls -S
+
+# Enable colored output (usually default)
+ls --color=auto
