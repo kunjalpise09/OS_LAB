@@ -1,0 +1,47 @@
+# === View Running Processes ===
+
+ps                    # Show processes for current shell session
+ps -e                 # List all running processes
+ps -ef                # Full-format list of all processes
+ps aux                # Show detailed info about all processes
+top                   # Real-time view of running processes
+htop                  # Enhanced top (install with: sudo apt install htop)
+
+# === Search for a Process ===
+
+ps aux | grep <name>      # Search for a process by name
+pgrep <name>              # Get PID(s) of process by name
+pidof <program>           # Get PID of a running program
+
+# === Kill or Terminate a Process ===
+
+kill <PID>                # Terminate process by PID
+kill -9 <PID>             # Force kill (SIGKILL) a process
+pkill <name>              # Kill process by name
+pkill -9 <name>           # Force kill process by name
+killall <name>            # Kill all instances of a process
+
+# === Background and Foreground Jobs ===
+
+<command> &               # Run a command in the background
+jobs                      # List background jobs
+fg %<job_number>          # Bring job to foreground
+bg %<job_number>          # Resume job in background
+
+# === Monitor Resource Usage ===
+
+top                       # Monitor CPU and memory usage
+free -h                   # Show free and used memory
+uptime                    # Show system uptime and load average
+vmstat                    # Memory, CPU, I/O usage
+watch <cmd>               # Repeat command every 2 sec (default)
+
+# === Process Priority ===
+
+nice -n <priority> <cmd>  # Start process with given priority (-20 = highest, 19 = lowest)
+renice <priority> -p <PID> # Change priority of running process
+
+# === List Open Files/Ports by Process ===
+
+lsof                      # List open files (install with: sudo apt install lsof)
+lsof -p <PID>             # List files opened by a process
